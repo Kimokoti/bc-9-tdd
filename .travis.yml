@@ -3,3 +3,4 @@ python:
   - "2.7"
 script:
   - python TDD/supersum/super_sum_test.py
+  - python TDD/sum/sum_test.py
