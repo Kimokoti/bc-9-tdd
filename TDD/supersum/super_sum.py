@@ -5,13 +5,13 @@ def super_sum(*args):
 	"""
 	total=0
 	for x in args:
-		if type(x) == list:
+		if type(x) == list and len(x) > 0:
 			for i in x:
 				if type(i) == str or type(i) == dict:
 					raise TypeError
 				else:
 					total =total+i
-		elif type(x) == str or type(x) == dict:
+		elif type(x) == str or type(x) == dict or type(x) == None or type(x) == '':
 			raise TypeError
 		else:
 			total=total+x
