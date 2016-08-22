@@ -22,6 +22,12 @@ class MySumTests(unittest.TestCase):
 		with self.assertRaises(TypeError):
 			my_sum("gfgfg", "string")
 
+	def test_almost_equal(self):
+		"""
+		Test if result is almost equal
+		"""
+		self.assertAlmostEqual(my_sum(12,13.5), 25.5,msg="Result Not almost Equal")
+
 
 	def test_none_result(self):
 		"""

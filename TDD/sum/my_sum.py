@@ -4,6 +4,6 @@ def my_sum(x,y):
 	"""
 	if type(x) == str or type(y) == dict or type(y) == str or type(y) == dict:
 		raise TypeError
-	else:
+	elif type(x) == float or type(x) == int:
 		return x + y
 	 
