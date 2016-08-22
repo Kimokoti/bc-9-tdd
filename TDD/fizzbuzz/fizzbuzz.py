@@ -1,6 +1,6 @@
 def fizz_buzz(n):
 	if type(n) not in [int, float]:
-		return TypeError
+		raise TypeError
 	elif n % 3 == 0 and n % 5 == 0:
 		return "FizzBuzz"
 	elif n % 3 == 0:
